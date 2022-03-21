@@ -1,0 +1,21 @@
+﻿<Window x:Class="Do_U_love_me.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Do_U_love_me"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        ResizeMode="NoResize">
+    <Grid Width="{Binding IsManipulationEnabled.FalseString, ElementName=window}" Height="450">
+        <!--1)Use Content-Component to set a text. 2)Just put the text inbetween -->
+        <!--2 Examples-->
+        <Button x:Name="Button1" Content="Yes" HorizontalAlignment="Left" Margin="210,299,0,0" VerticalAlignment="Top" Height="24" Width="80" Click="Button1_Click"/>
+        <Button x:Name="Button2" HorizontalAlignment="Left" Margin="507,299,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.499,0.539" Height="24" Width="80" MouseEnter="Button2_MouseEnter">
+            No
+            <!--or u can also insert a Label Tool here-->
+        </Button>
+        <Label x:Name="Label" Content="Do U love me?" Margin="0,151,0,261" HorizontalAlignment="Center"/>
+
+    </Grid>
+</Window>
